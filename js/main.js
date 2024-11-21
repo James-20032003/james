@@ -316,4 +316,10 @@ $(function() {
   }
 
 });
+function playVideo() {  
+	const video = document.getElementById('video');  
+	video.src += "&autoplay=1"; // Add autoplay parameter  
+	const icon = document.querySelector('.play-icon');  
+	icon.style.display = 'none'; // Hide play icon when video plays  
+}  
 
