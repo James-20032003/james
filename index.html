@@ -132,69 +132,130 @@
 	</section>
 	-->
 
-	<section class="ftco-about ftco-section ftco-no-pt ftco-no-pb" id="about-section">
-		<div class="container">
-			<div class="row d-flex no-gutters">
-				<div class="col-md-6 col-lg-5 d-flex">
-					<div class="img-about img d-flex align-items-stretch">
-						<div class="overlay"></div>
-						<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/about_1.jpg);">
-						</div>
+<section class="ftco-about ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+	<style>
+		/* Custom Styling for Enhanced Profile Info */
+		.profile-card-custom {
+			background: linear-gradient(135deg, #1e1e2f 0%, #2a2a40 100%);
+			border-left: 5px solid #ffbd39;
+			border-radius: 12px;
+			padding: 20px 25px;
+			box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+		}
+		.profile-card-custom li {
+			margin-bottom: 10px;
+			font-size: 16px;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+			padding-bottom: 8px;
+		}
+		.profile-card-custom li:last-child {
+			border-bottom: none;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+		.profile-card-custom li span:first-child {
+			font-weight: 700;
+			color: #ffbd39; /* High-contrast accent color */
+			width: 130px;
+			display: inline-block;
+		}
+		.profile-card-custom li span:last-child {
+			color: #ffffff;
+			font-weight: 500;
+		}
+
+		/* Custom Styling for Social Media Button Grid */
+		.social-buttons-grid {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 12px;
+		}
+		.social-btn {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			padding: 10px 18px;
+			border-radius: 30px;
+			color: #fff !important;
+			font-weight: 600;
+			font-size: 14px;
+			text-decoration: none !important;
+			transition: all 0.3s ease;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+		}
+		.social-btn:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+			opacity: 0.95;
+		}
+		.social-btn i {
+			margin-right: 8px;
+			font-size: 16px;
+		}
+
+		/* Platform Specific Colors */
+		.btn-linkedin { background-color: #0077b5; }
+		.btn-whatsapp { background-color: #25d366; }
+		.btn-twitter { background-color: #000000; } /* X / Twitter */
+		.btn-instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+		.btn-phone { background-color: #ffbd39; color: #000 !important; }
+	</style>
+
+	<div class="container">
+		<div class="row d-flex no-gutters">
+			<div class="col-md-6 col-lg-5 d-flex">
+				<div class="img-about img d-flex align-items-stretch">
+					<div class="overlay"></div>
+					<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/about_1.jpg);">
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-7 pl-md-4 pl-lg-5 py-5">
-					<div class="py-md-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								<span class="subheading">My Intro</span>
-								<h2 class="mb-4" style="font-size: 34px; text-transform: capitalize;">About Me</h2>
-								<p>Innovative and deadline-driven web designer, system developer &amp; a database manager with 7 months of experience designing and developing user-centered digital works.</p>
-																<p>Attended my industrial trainning from KINGLINE PRESS LIMITED were more skilling  was obtained..</p>
-								<p style=" color: red;"> <a href="http://kinglinepress.com">KINGLINE PRESS LIMITED</a></p>
+			</div>
+			<div class="col-md-6 col-lg-7 pl-md-4 pl-lg-5 py-5">
+				<div class="py-md-5">
+					<div class="row justify-content-start pb-3">
+						<div class="col-md-12 heading-section ftco-animate">
+							<span class="subheading">My Intro</span>
+							<h2 class="mb-4" style="font-size: 34px; text-transform: capitalize;">About Me</h2>
+							<p>Innovative and deadline-driven web designer, system developer &amp; a database manager with 7 months of experience designing and developing user-centered digital works.</p>
+							<p>Attended my industrial training from KINGLINE PRESS LIMITED where more skilling was obtained.</p>
+							<p><a href="http://kinglinepress.com" target="_blank" style="color: #ffbd39; font-weight: bold;">KINGLINE PRESS LIMITED</a></p>
 
+							<ul class="about-info profile-card-custom mt-4 px-md-3 px-2">
+								<li class="d-flex"><span>Name:</span> <span>Sssebulime James</span></li>
+								<li class="d-flex"><span>Date of birth:</span> <span>January, 28th</span></li>
+								<li class="d-flex"><span>Address:</span> <span>Nsambya_Kampala</span></li>
+								<li class="d-flex"><span>Email:</span> <span>ssebulimejames2003@gmail.com</span></li>
+								<li class="d-flex"><span>Phone:</span> <span>+256744873621</span></li>
+							</ul>
+						</div>
 
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Name:</span> <span>Sssebulime James</span></li>
-									<li class="d-flex"><span>Date of birth:</span> <span>January,28th</span></li>
-									<li class="d-flex"><span>Address:</span> <span>Nsambya_Kampala</span></li>
-									<li class="d-flex"><span>Email:</span> <span>ssebulimejames2003@gmail.com</span></li>
-									<li class="d-flex"><span>Phone: </span> <span>0744873621</span></li>
-								</ul>
-							</div>
-							<div class="col-md-12">
-								<div class="my-interest d-lg-flex w-100">
-									<div class="interest-wrap d-flex align-items-center">
-										<div class="icon d-flex align-items-center justify-content-center">
-											<span class="flaticon-listening"></span>
-										</div>
-										<div class="text">Music</div>
-									</div>
-									<div class="interest-wrap d-flex align-items-center">
-										<div class="icon d-flex align-items-center justify-content-center">
-											<span class="flaticon-suitcases"></span>
-										</div>
-										<div class="text">Travel</div>
-									</div>
-									<div class="interest-wrap d-flex align-items-center">
-										<div class="icon d-flex align-items-center justify-content-center">
-											<span class="flaticon-video-player"></span>
-										</div>
-										<div class="text">Movie</div>
-									</div>
-									<div class="interest-wrap d-flex align-items-center">
-										<div class="icon d-flex align-items-center justify-content-center">
-											<span class="flaticon-football"></span>
-										</div>
-										<div class="text">Gaming</div>
-									</div>
-								</div>
+						<div class="col-md-12 mt-4">
+							<h4 class="mb-3" style="font-size: 18px; font-weight: 600;">Connect With Me</h4>
+							<div class="social-buttons-grid">
+								<a href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME" target="_blank" rel="noopener noreferrer" class="social-btn btn-linkedin">
+									<i class="ion-logo-linkedin"></i> LinkedIn
+								</a>
+								<a href="https://wa.me/256744873621" target="_blank" rel="noopener noreferrer" class="social-btn btn-whatsapp">
+									<i class="ion-logo-whatsapp"></i> WhatsApp
+								</a>
+								<a href="https://twitter.com/YOUR_TWITTER_USERNAME" target="_blank" rel="noopener noreferrer" class="social-btn btn-twitter">
+									<i class="ion-logo-twitter"></i> Twitter
+								</a>
+								<a href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME" target="_blank" rel="noopener noreferrer" class="social-btn btn-instagram">
+									<i class="ion-logo-instagram"></i> Instagram
+								</a>
+								<a href="tel:+256744873621" class="social-btn btn-phone">
+									<i class="ion-ios-call"></i> Call Now
+								</a>
 							</div>
 						</div>
+
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
+</section>
 	
 	<section class="ftco-section bg-light" id="skills-section">
 		<div class="container">
